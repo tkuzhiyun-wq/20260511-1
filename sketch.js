@@ -123,7 +123,7 @@ function draw() {
       let faceWidthOnCanvas = dist(leftEarlobe.x * scaleX, leftEarlobe.y * scaleY, rightEarlobe.x * scaleX, rightEarlobe.y * scaleY);
       
       // 設定面具寬度，約為臉部寬度的 2.5 倍以更完整覆蓋臉部邊緣
-      let stickerW = faceWidthOnCanvas * 2.5;
+      let stickerW = faceWidthOnCanvas * 1;
       let stickerH = stickerW * (faceStickerImg.height / faceStickerImg.width);
       
       push();
