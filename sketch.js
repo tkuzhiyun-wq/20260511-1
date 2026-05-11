@@ -122,8 +122,8 @@ function draw() {
       // 根據畫布上的縮放比例計算臉部寬度
       let faceWidthOnCanvas = dist(leftEarlobe.x * scaleX, leftEarlobe.y * scaleY, rightEarlobe.x * scaleX, rightEarlobe.y * scaleY);
       
-      // 設定面具寬度，約為臉部寬度的 2.5 倍以更完整覆蓋臉部邊緣
-      let stickerW = faceWidthOnCanvas * 1;
+      // 設定面具寬度，約為臉部寬度的 1.8 倍以貼合真實臉部大小
+      let stickerW = faceWidthOnCanvas * 1.8;
       let stickerH = stickerW * (faceStickerImg.height / faceStickerImg.width);
       
       push();
